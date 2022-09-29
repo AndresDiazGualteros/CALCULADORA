@@ -15,34 +15,28 @@ suma.addEventListener("click",()=>{
     valor[1].value=valor[0].value
     valor[0].value=""
 })
-
 resta.addEventListener("click",()=>{
     operador.innerText="-"
     valor[1].value=valor[0].value
     valor[0].value=""
 });
-
 multi.addEventListener("click",()=>{
     operador.innerText="*"
     valor[1].value=valor[0].value
     valor[0].value=""
 });
-
 division.addEventListener("click",()=>{
     operador.innerText="/"
     valor[1].value=valor[0].value
     valor[0].value=""
 });
-
 ac.addEventListener("click",()=>{
     operador.innerText=""
     display.innerText=""
     valor[0].value = ""
     valor[1].value = ""
 });
-
 igual.addEventListener("click",()=>{
-
     if(operador.innerText==="+"){
         display.innerText = parseInt(valor[1].value) + parseInt(valor[0].value)
     }else if(operador.innerText==="-"){
