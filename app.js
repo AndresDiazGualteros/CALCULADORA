@@ -48,10 +48,10 @@ igual.addEventListener("click",()=>{
     }
 })
 
-// for(let i=0; i<10; i++){
-//     document.getElementById("num"+i).addEventListener("click",presion)
-// }
+for(let i=0; i<10; i++){
+    document.getElementById("num"+i).addEventListener("click",presion)
+}
 
-// function presion(e){
-//     display.innerText = display.innerText + e.target.value
-// }
+function presion(e){
+    display.innerText = display.innerText + e.target.value
+}

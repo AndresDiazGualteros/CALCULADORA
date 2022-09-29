@@ -33,6 +33,7 @@ body{
     font-size: 40px;
     background-color: rgb(68, 68, 68);
     border-radius: 20px;
+    margin: 40px;
 }
 .valor{
     width: 40px;
@@ -49,7 +50,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 400px;
+    width: 520px;
     gap: 30px;
     margin-bottom: 30px;
 }
@@ -69,6 +70,10 @@ body{
 #ac{
     width: 120px;
     border-radius: 20px;
+}
+#igual{
+    border-radius: 20px;
+    width: 120px;
 }
 .btn:hover{
     cursor: pointer;
