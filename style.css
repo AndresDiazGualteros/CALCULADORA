@@ -88,6 +88,9 @@ body{
     text-align: center;
     font-size: 20px;
 }
+#val2{
+    display: none;
+}
 .operador{
     width: 100px;
     height: 30px;

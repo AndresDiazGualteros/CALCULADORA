@@ -12,18 +12,26 @@ const ac = document.getElementById("ac");
 
 suma.addEventListener("click",()=>{
     operador.innerText="+"
+    valor[1].value=valor[0].value
+    valor[0].value=""
 })
 
 resta.addEventListener("click",()=>{
     operador.innerText="-"
+    valor[1].value=valor[0].value
+    valor[0].value=""
 });
 
 multi.addEventListener("click",()=>{
     operador.innerText="*"
+    valor[1].value=valor[0].value
+    valor[0].value=""
 });
 
 division.addEventListener("click",()=>{
     operador.innerText="/"
+    valor[1].value=valor[0].value
+    valor[0].value=""
 });
 
 ac.addEventListener("click",()=>{
@@ -36,13 +44,13 @@ ac.addEventListener("click",()=>{
 igual.addEventListener("click",()=>{
 
     if(operador.innerText==="+"){
-        display.innerText = parseInt(valor[0].value) + parseInt(valor[1].value)
+        display.innerText = parseInt(valor[1].value) + parseInt(valor[0].value)
     }else if(operador.innerText==="-"){
-        display.innerText = parseInt(valor[0].value) - parseInt(valor[1].value)
+        display.innerText = parseInt(valor[1].value) - parseInt(valor[0].value)
     }else if(operador.innerText==="*"){
-        display.innerText = parseInt(valor[0].value) * parseInt(valor[1].value)
+        display.innerText = parseInt(valor[1].value) * parseInt(valor[0].value)
     }else if(operador.innerText==="/"){
-        display.innerText = parseInt(valor[0].value) / parseInt(valor[1].value)
+        display.innerText = parseInt(valor[1].value) / parseInt(valor[0].value)
     }
 })
 
