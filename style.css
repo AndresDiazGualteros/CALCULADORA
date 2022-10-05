@@ -83,6 +83,7 @@ body{
     gap: 20px;
     display: flex;
     align-items: center;
+    display: none;
 }
 .valor{
     width: 100px;
@@ -92,9 +93,6 @@ body{
     border-radius: 5px;
     text-align: center;
     font-size: 20px;
-}
-#val2{
-    display: none;
 }
 .operador{
     width: 100px;
